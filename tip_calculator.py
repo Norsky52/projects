@@ -23,7 +23,7 @@ total_25 = bill + tip_25
 people_text = input("How many people are splitting the bill? ")
 people = int(people_text)
 #display results
-print(f"\nBill amount: ${bill: 2f}")
+print(f"\nBill amount: ${bill: .2f}")
 print(f"Number of people: {people}")
 print("-" * 35)
 print(f" {'tip %' :<10} {'tip':<10} {'total':<10} {'Per person':<10}")
