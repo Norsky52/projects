@@ -15,11 +15,11 @@ tax_rate = "0.075"   # 7.5% sales tax
 print('=' *40)
 print("STORE RECEIPT")
 print('=' *40)
-
+#these are the lines that will show the items purchased, their price, quantity and total cost for each item.
 print(f"{item1_name} ${item1_price:} x {item1_qty:} = ${float(item1_price) * int(item1_qty):.2f}")
 print(f"{item2_name} ${item2_price:} x {item2_qty:} = ${float(item2_price) * int(item2_qty):.2f}")
 print(f"{item3_name} ${item3_price:} x {item3_qty:} = ${float(item3_price) * int(item3_qty):.2f}")
-print('-' *40)
+print('-' *40)#to seperate the items from the subtotal.
 print(f"Subtotal: ${float(item1_price) * int(item1_qty) + float(item2_price) * int(item2_qty) + float(item3_price) * int(item3_qty):.2f}")
 print(f"Tax: ${((float(item1_price) * int(item1_qty) + float(item2_price) * int(item2_qty) + float(item3_price) * int(item3_qty)) * float(tax_rate)):.2f}")
 print ('=' *40)# to seperate the total from the rest of the receipt.
